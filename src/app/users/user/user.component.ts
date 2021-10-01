@@ -31,7 +31,7 @@ export class UserComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     /**
-     * We unsubscribe so that we clear subscriptions (memory leaks etc...)
+     * We unsubscribe so that we clear subscriptions (memory leaks etc...), Angular will handle it for us but we can put it anyway
      */
 
     this.paramsSubscription.unsubscribe();
